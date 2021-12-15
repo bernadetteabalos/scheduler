@@ -10,6 +10,11 @@ Scheduler is a single page react application that allows its users to book appoi
 - [Axios](https://github.com/axios/axios), [WebSockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
 - [Storybook](https://storybook.js.org/), [Webpack Dev Server](https://github.com/webpack/webpack-dev-server), [Jest](https://jestjs.io/en/), [Testing Library](https://testing-library.com/)
 
+## Screenshots:
+!["Main App View"](https://github.com/bernadetteabalos/scheduler/blob/master/docs/scheduler_main.png?raw=true)
+!["Main App Functionalities"](https://github.com/bernadetteabalos/scheduler/blob/master/docs/scheduler_functions.gif?raw=true)
+!["Error Messages"](https://github.com/bernadetteabalos/scheduler/blob/master/docs/scheduler_error.gif?raw=true)
+
 
 ## Setup
 

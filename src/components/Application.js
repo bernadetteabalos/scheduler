@@ -15,6 +15,7 @@ export default function Application() {
     cancelInterview
   } = useApplicationData();
 
+  //Helper functions to extract data from api server to be properly displayed
   const appointments = getAppointmentsForDay(state, state.day);
   const interviewers = getInterviewersForDay(state, state.day);
 
@@ -43,7 +44,6 @@ export default function Application() {
       <section className="schedule">
         {appointments.map((appointment) => {
           const interview = getInterview(state, appointment.interview);
-
           return (
             <Appointment key={appointment.id}
               {...appointment}
@@ -52,7 +52,6 @@ export default function Application() {
               bookInterview={bookInterview}
               cancelInterview={cancelInterview} />
           );
-
         })};
         <Appointment key="last" time="5pm" />
       </section>

@@ -25,6 +25,15 @@ Error Messages:
 
 Install dependencies with `npm install`.
 
+## Setting up Database/API Server
+Clone the repository provided and install any dependencies:
+```sh
+cd <project-directory>
+git clone https://github.com/bernadetteabalos/scheduler-api
+cd scheduler-api
+npm install
+```
+Follow the "Creating the DB" instructions in the [README](https://github.com/bernadetteabalos/scheduler-api) within your development environment that has PostgreSQL installed.
 ## Running Webpack Development Server
 
 ```sh

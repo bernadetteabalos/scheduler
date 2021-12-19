@@ -7,17 +7,16 @@ export default function useVisualMode(initial) {
   //Transition between modes
   const transition = function (newMode, replace = false) {
     if (replace) {
-      history.pop();
+      setMode(newMode)
+      setHistory((prevState) => [...prevState])
     }
-    history.push(newMode);
     setMode(newMode);
-    setHistory(history)
+    setHistory((prevState) => [...prevState])
   };
 
   const back = function () {
     if (history.length > 1) {
-      history.pop();
-      setHistory(history);
+      history.pop()
       setMode(history[history.length - 1]);
     } else {
       setMode(mode);

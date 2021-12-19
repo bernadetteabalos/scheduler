@@ -83,7 +83,7 @@ export default function Appointment(props) {
         <Form
           interviewers={props.interviewers}
           onSave={save}
-          onCancel={() => back()}
+          onCancel={back}
         />
       )}
       {mode === SAVING && (
@@ -93,7 +93,7 @@ export default function Appointment(props) {
       {mode === CONFIRM && (
         <Confirm
           message="Are you sure you would like to delete?"
-          onCancel={() => back()}
+          onCancel={back}
           onConfirm={deleteApp}
         />
       )}
@@ -103,19 +103,19 @@ export default function Appointment(props) {
           interviewer={props.interview.interviewer.id}
           interviewers={props.interviewers}
           onSave={save}
-          onCancel={() => back()}
+          onCancel={back}
         />
       )}
       {mode === ERROR_SAVE && (
         <Error
           message="Error occured when saving"
-          onClose={() => back()}
+          onClose={back}
         />
       )}
       {mode === ERROR_DELETE && (
         <Error
           message="Error occured when deleting"
-          onClose={() => back()}
+          onClose={back}
         />
       )}
     </article>
